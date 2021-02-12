@@ -1,4 +1,10 @@
-import '/intro/introstyles.css'
+fetch('/dp-revival/intro/introstyles.css')
+  .then((response) => response.text())
+  .then((styles) => {
+    var stylesheetElement = document.createElement('style');
+    style.textContent = styles;
+    document.head.appendChild(style);
+  })
 
 var intro = document.createElement('div');
 
