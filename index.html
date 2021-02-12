@@ -1,20 +1,7 @@
 <html>
   <head>
     <script src="//ajax.googleapis.com/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/intro/introscript.js"></script>
-    <script>
-      class ImportsElement {
-        constructor() {}
-        connectedCallback() {
-          for (const url in this.innerHTML.split(/\n/)) {
-            let script = document.createElement('script');
-            script.src = url;
-            document.head.appendChild(script);
-          }
-        }
-      }
-      customElements.define()
-    </script>
+    <script src="intro/introscript.js"></script>
   </head>
   <body></body>
 </html>
