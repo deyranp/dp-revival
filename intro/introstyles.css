@@ -1,0 +1,48 @@
+@keyframes grow {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#intro {
+  background: linear-gradient(to bottom right, #d000ff, #006eff);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+}
+#intro img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  animation: grow ease-out 1s;
+}
+
+#plus-sign {
+  font-size: 60pt;
+  display: inline;
+  vertical-align: top;
+  margin: 50px;
+  animation: fade linear 150ms;
+  animation-delay: 500ms;
+}
