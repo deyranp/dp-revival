@@ -1,3 +1,5 @@
+import '/intro/introstyles.css'
+
 var intro = document.createElement('div');
 
 intro.id = 'intro';
