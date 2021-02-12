@@ -1,11 +1,3 @@
-document.body.style.margin = 0;
-
-var displays = {};
-for (const element of [...document.querySelectorAll('body *')]) {
-  displays[element] = getComputedStyle(element).display;
-  element.style.display = 'none';
-}
-
 var intro = document.createElement('div');
 
 intro.id = 'intro';
